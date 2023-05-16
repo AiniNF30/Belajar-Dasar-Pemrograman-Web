@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=League+Spartan:wght@500;700&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  color: #609966;
+}
+
+header {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #9dc08b;
+  font-size: 15px;
+
+}
+
+.nav__mobile {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #fffbe0;
+  width: 200px;
+  height: 100%;
+  z-index: 100;
+  padding: 10px;
+  line-height: 40px;
+
+}
+
+.nav__mobile img {
+  width: 40px;
+  height: 40px;
+  border: none;
+
+}
+
+.hamburger {
+  display: none;
+ 
+}
+
+.button__close {
+  height:30px;
+  width: 30px;
+  
+  }
+
+
+.header {
+  display: fixed;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+main {
+  padding: 20px;
+  background-color: #fffbe9;
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: end;
+}
+
+.home {
+  background-color: #edf1d6;
+}
+
+.content__home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.name__home {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.content__home p {
+  text-align: center;
+  
+}
+
+.home ul {
+  display: flex;
+  gap: 30px;
+}
+
+.home ul li img {
+  width: 30px;
+  padding-top: 10px;
+}
+
+.about__name {
+  padding-bottom: 10px;
+}
+
+.about__me {
+  background-color: #edf1d6;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav {
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 5px solid white;
+  background-color: #edf1d6;
+}
+
+.box__list {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 5px solid white;
+  background-color: #edf1d6;
+}
+
+.box h3 {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.education ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.education ul li {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.education ul img {
+  width: 200px;
+  height: 250px;
+  align-self: center;
+}
+
+#content {
+  flex: 5;
+}
+
+.circle-bar {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.circle {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 15px solid #ccc;
+  border-top-color: #09c;
+  transform: rotate(-90deg);
+  animation: circle-anim 1s forwards;
+}
+
+.skills {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+
+.skills__name {
+  display: flex;
+  padding-bottom: 30px;
+  gap: 30px;
+  justify-content: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #40513b;
+  text-align: center;
+  font-weight: bold;
+}
+
+@keyframes circle-anim {
+  0% {
+    transform: rotate(-90deg);
+    border-top-color: #09c;
+  }
+  100% {
+    transform: rotate(270deg);
+    border-top-color: #609966;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .home img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home ul li img {
+    width: 30px;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .home img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .home img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home ul li img {
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .education ul img {
+    width: 120px;
+    height: 150px;
+    align-self: center;
+  }
+
+  .box__list {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .skills__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__desktop {
+    display: none;
+  }
+
+  .nav__mobile {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .education ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}

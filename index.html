@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PORTOFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Portofolio</h1>
+      <div class="nav__desktop">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </nav>
+      </div>
+      <span class="hamburger" id="hamburger">
+        <img src="./assets/image/hamburger-menu.png" />
+      </span>
+      <div class="nav__mobile" id="navMobile">
+        <span class="button__close" id="buttonClose" onclick="close()">
+          <img src="./assets/image/close.png" alt="" />
+        </span>
+        <ul class="nav__dropdown" id="navDropdown">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about_me">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div>
+        <!--Home-->
+        <aside class="box home">
+          <h2>Home</h2>
+          <div class="content__home">
+            <img src="assets/image/Aini.png" class="img" alt="home" />
+            <h2 class="name__home">Aini Nurpadilah</h2>
+            <p>Student of Informatics Engineering Krisnadwipayana University</p>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/aininurfadilah8/">
+                  <img src="assets/image/instagram.png" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AiniNF30">
+                  <img src="assets/image/github.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/aininurfadilah8">
+                  <img src="assets/image/twitter.png"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/aini-nurpadilah-271a5a209/"
+                >
+                  <img src="assets/image/linkedIn.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!--about me-->
+        <article id="about_me" class="box about__me">
+          <h2 class="about__me">About Me</h2>
+          <p>
+            Hello, I'm a 6th semester student majoring in informatics engineering at Krisnadwipayana University.
+            I have experience in coding training and I am committed to completing it. I also like to work in a team and
+            have good communication skills. Also, I have a strong interest in website development machine learning and data scients.
+          </p>
+        </article>
+        <article id="education" class="box education">
+          <h2>Education</h2>
+          <ul>
+            <li class="box__list">
+              <h3>Krisnadwipayana University</h3>
+              <img src="assets/image/unkris.png" />
+            </li>
+
+            <li class="box__list">
+              <h3>SMK Bhakti Kartini</h3>
+              <img src="assets/image/bk.png" />
+            </li>
+          </ul>
+        </article>
+        <article id="skills" class="box">
+          <h2>Skills</h2>
+          <div class="skills__name">
+            <div class="circle-bar">
+              <div class="circle"></div>
+              <div class="skills">Python</div>
+            </div>
+
+            <div class="circle-bar">
+              <div class="circle"></div>
+              <div class="skills">HTML & CSS</div>
+            </div>
+            <div class="circle-bar">
+              <div class="circle"></div>
+              <div class="skills">Visualisasi Data</div>
+            </div>
+            <div class="circle-bar">
+              <div class="circle"></div>
+              <div class="skills">JavaScript</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <!--footer-->
+    <footer>
+      <p>Copyright &#169; 2023 All rights reserved</p>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
